@@ -73,8 +73,8 @@ if(require.main == module) {
         .option('-u, --url <url_file>', 'Path to index.html')
         .parse(process.argv);
     var checkJson = checkHtmlFile(program.url, program.checks);
-    var outJson = JSON.stringify(checkJson, null, 4);
-    console.log(outJson);
+    //var outJson = JSON.stringify(checkJson, null, 4);
+    //console.log(outJson);
 } else {
     exports.checkHtmlFile = checkHtmlFile;
 }
